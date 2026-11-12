@@ -1,4 +1,3 @@
-// TODO: Import all necessary ERC2 libraries here
 #include <Arduino.h>
 #include <erc2.h>
 #define SLEEP 1.0
@@ -23,15 +22,13 @@ void ERCMain()
 	LCD.Clear();
 	LCD.WriteLine("Waiting for touch.");
 
-	bool touched; // TODO: Declare variables
+	bool touched = false;
 	while (!touched)
 	{
-		// TODO: Screen is not being touched
         LCD.WriteLine("Screen is not being touched.");
 	}
 	while (touched)
 	{
-		// TODO: Screen is being touched
         LCD.WriteLine("Screen is being touched.");
 	}
 
