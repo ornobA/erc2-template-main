@@ -23,14 +23,16 @@ void ERCMain()
 	LCD.Clear();
 	LCD.WriteLine("Waiting for touch.");
 
-	XXXX; // TODO: Declare variables
-	while (XXXX)
+	bool touched; // TODO: Declare variables
+	while (!touched)
 	{
 		// TODO: Screen is not being touched
+        LCD.WriteLine("Screen is not being touched.");
 	}
-	while (XXXX)
+	while (touched)
 	{
 		// TODO: Screen is being touched
+        LCD.WriteLine("Screen is being touched.");
 	}
 
 	LCD.WriteLine("Starting!");
