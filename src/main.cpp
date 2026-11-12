@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <erc2.h>
-#define SLEEP 1.0
 
 using namespace erc2;
 
@@ -33,40 +32,47 @@ void ERCMain()
 
 	while (true)
 	{
-		// North-South
-		// Red -> Yellow -> Green -> Walk -> Don't Walk
-		red1.Write(true);
-		Sleep(SLEEP);
-		red1.Write(false);
-		yellow1.Write(true);
-		Sleep(SLEEP);
-		yellow1.Write(false);
-		green1.Write(true);
-		Sleep(SLEEP);
-		green1.Write(false);
-		walk1.Write(true);
-		Sleep(SLEEP);
-		walk1.Write(false);
-		dontWalk1.Write(true);
-		Sleep(SLEEP);
-		dontWalk1.Write(false);
 
-		// East-West
-		// Red -> Yellow -> Green -> Walk -> Don't Walk
-		red2.Write(true);
-		Sleep(SLEEP);
-		red2.Write(false);
-		yellow2.Write(true);
-		Sleep(SLEEP);
-		yellow2.Write(false);
+		// North-South CYCLE
+
+        //NS LIGHT GREEN, WALK LIGHT ON
+        red1.Write(false);
+        dontWalk1.Write(false);
+		green1.Write(true);
+        walk1.Write(true);
+		Sleep(5);
+        //NS WALK LIGHT OFF
+        walk1.Write(false);
+        dontWalk1.Write(true);
+        Sleep(2);
+        //NS LIGHT YELLOW
+        yellow1.Write(true);
+		green1.Write(false);
+        Sleep(2);
+        //NS LIGHT RED
+        yellow1.Write(false);
+		red1.Write(true);
+        Sleep(1);
+
+		// East-West CYCLE
+
+        //NS LIGHT GREEN, WALK LIGHT ON
+        red2.Write(false);
+        dontWalk2.Write(false);
 		green2.Write(true);
-		Sleep(SLEEP);
+        walk2.Write(true);
+		Sleep(5);
+        //NS WALK LIGHT OFF
+        walk2.Write(false);
+        dontWalk2.Write(true);
+        Sleep(2);
+        //NS LIGHT YELLOW
+        yellow2.Write(true);
 		green2.Write(false);
-		walk2.Write(true);
-		Sleep(SLEEP);
-		walk2.Write(false);
-		dontWalk2.Write(true);
-		Sleep(SLEEP);
-		dontWalk2.Write(false);
+        Sleep(2);
+        //NS LIGHT RED
+        yellow2.Write(false);
+		red2.Write(true);
+        Sleep(1);
 	}
 }
