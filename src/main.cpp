@@ -4,7 +4,6 @@
 
 using namespace erc2;
 
-// TODO: Fill in the pin declarations
 DigitalOutput green1(Pin0);
 DigitalOutput yellow1(Pin1);
 DigitalOutput red1(Pin2);
@@ -22,16 +21,14 @@ void ERCMain()
 	LCD.Clear();
 	LCD.WriteLine("Waiting for touch.");
 
-	bool touched = false;
-	while (!touched)
+    int x, y;
+	while (!LCD.Touch(&x, &y))
 	{
-        LCD.WriteLine("Screen is not being touched.");
 	}
-	while (touched)
+	while (!LCD.Touch(&x, &y))
 	{
-        LCD.WriteLine("Screen is being touched.");
-	}
-
+	} 
+    
 	LCD.WriteLine("Starting!");
 
 	while (true)
