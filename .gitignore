@@ -1,0 +1,10 @@
+.pio
+.DS_Store
+__pycache__
+
+.vscode/*
+!.vscode/extensions.json
+
+# Developer-mode marker: stops scripts/sync/bootstrap.py from
+# overwriting local changes. Never committed.
+.erc2-dev

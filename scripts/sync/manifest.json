@@ -1,0 +1,60 @@
+{
+    "files": [
+        {
+            "path": ".gitignore",
+            "sha256": "CF1808B2C8B4070DE81D33756FFE881F63CF90FF9171AF47298A364399122B91"
+        },
+        {
+            "path": ".vscode/extensions.json",
+            "sha256": "913D379558F6A8B0F08778A4F80B4EF0DD2E30B26B451ADCD39B307763A9FF53"
+        },
+        {
+            "path": "platformio.ini",
+            "sha256": "01BC417FFE36FE7EB3AD46C93EA47962B21A993224E663FA5C8762EFB2AFBDFC"
+        },
+        {
+            "path": "scripts/_erc2_package.py",
+            "sha256": "C36145C8D1C0A12EC6768A630562EB522ED71A0AD74D56601B76441A623D9F8C"
+        },
+        {
+            "path": "scripts/auto_upload.py",
+            "sha256": "5A4C693C5286B1EEBA7BB2F48E9B44ADA9E8031C1FD0FF7ED944E3348DA8125B"
+        },
+        {
+            "path": "scripts/erc2_config.py",
+            "sha256": "255DFC0774CE5EAC9A2BC38A858106614397FD114D34EA765BC3C06884A6BCAC"
+        },
+        {
+            "path": "scripts/esp32_update.py",
+            "sha256": "8B48B909FC200C6AABEF2A88806A19636776580968EF8FDCA91A37E3058C1B56"
+        },
+        {
+            "path": "scripts/library_update.py",
+            "sha256": "3049C846DD7955F9B7F13D23FCA94E59544951EB2F8C7B63270A99210AB36E57"
+        },
+        {
+            "path": "scripts/link_install.py",
+            "sha256": "86DD08A4B55F18F15C005FEED8F2A6D9AD14828837CD397E06C1B06207E16F5F"
+        },
+        {
+            "path": "scripts/sync/bootstrap.py",
+            "sha256": "2F86CA9854EF7EE7E7C9A1B5116D15E147A1533CD2411B35A366C9C4D32112AA"
+        },
+        {
+            "path": "scripts/sync/install_git_hook.py",
+            "sha256": "032F9A7D7DA36724E9A4B4E270F9DCFB8BE8EA01C403538198FDD3DE86B92B83"
+        },
+        {
+            "path": "scripts/sync/update_manifest.py",
+            "sha256": "F883B5933097DFAACC41125E2526C8F641EA8222FB22FD921C836757A1421C24"
+        }
+    ],
+    "removed": [
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
+        "scripts/clear_libs_on_new_version.py",
+        "scripts/erc2_link.py",
+        "scripts/release_serial_port.py",
+        "scripts/sync/setup_hooks.py"
+    ]
+}
